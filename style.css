@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+button {
+  font-family: "DM Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color0: #ffffff;
+  --color1: #34355b;
+  --color2: #ff9500;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  font-size: 1.6rem;
+
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+
+  color: var(--color1);
+}
+
+p {
+  margin: 2rem 0 3rem;
+
+  font-size: 1.8rem;
+
+  color: var(--color1);
+  opacity: 0.9;
+}
+
+.screen1 button {
+  background: none;
+}
+
+@keyframes treme {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.cookie:hover {
+  animation: treme 0.1s infinite;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+
+  color: var(--color1);
+
+  margin-bottom: 2rem;
+}
+
+.luck {
+  filter: saturate(200%);
+  animation: move 1.2s ease-in-out;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes move {
+  0% {
+    top: 250px;
+    transform: translate(-50%, 550%);
+    width: 3rem;
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+    width: 30rem;
+  }
+}
+
+.screen1,
+.screen2 {
+  background: var(--color0);
+  padding: 5rem 6.4rem 6.4rem;
+  border-radius: 0.6rem;
+  width: 42.8rem;
+  height: 50rem;
+  text-align: center;
+  position: relative;
+}
+
+.screen2 {
+  height: 55rem;
+}
+
+.openedCookie {
+  margin-top: 150px;
+}
+
+button {
+  padding: 1.6rem;
+
+  color: var(--color0);
+  background: var(--color2);
+
+  border: none;
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+}
